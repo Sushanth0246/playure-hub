@@ -1,6 +1,5 @@
-
 import React, { useState, useEffect } from 'react';
-import { ArrowUp } from 'lucide-react';
+import { ChevronUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const ScrollToTop = () => {
@@ -22,20 +21,22 @@ const ScrollToTop = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: 'smooth'
     });
   };
 
-  if (!isVisible) return null;
-
   return (
-    <Button
-      onClick={scrollToTop}
-      className="floating-action"
-      size="icon"
-    >
-      <ArrowUp className="w-5 h-5" />
-    </Button>
+    <>
+      {isVisible && (
+        <Button
+          onClick={scrollToTop}
+          className="fixed bottom-8 right-8 z-50 w-12 h-12 rounded-full bg-primary hover:bg-primary-dark shadow-lg animate-bounce"
+          size="icon"
+        >
+          <ChevronUp className="w-5 h-5 text-white" />
+        </Button>
+      )}
+    </>
   );
 };
 

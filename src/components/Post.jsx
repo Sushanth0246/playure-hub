@@ -1,22 +1,9 @@
-
 import React from 'react';
 import { Heart, MessageCircle, Share2, Trophy, Users, MoreHorizontal } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
-interface PostProps {
-  author: string;
-  avatar: string;
-  time: string;
-  content: string;
-  image?: string;
-  likes: number;
-  comments: number;
-  shares: number;
-  type?: 'achievement' | 'competition' | 'collaboration' | 'normal';
-}
-
-const Post: React.FC<PostProps> = ({
+const Post = ({
   author,
   avatar,
   time,

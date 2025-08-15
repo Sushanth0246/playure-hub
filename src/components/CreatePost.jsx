@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Image, Video, Smile, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';

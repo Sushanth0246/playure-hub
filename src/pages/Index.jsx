@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '@/components/Header';
 import Sidebar from '@/components/Sidebar';
@@ -18,7 +17,7 @@ const samplePosts = [
     likes: 24,
     comments: 8,
     shares: 3,
-    type: 'achievement' as const
+    type: 'achievement'
   },
   {
     author: 'Sarah Johnson',
@@ -28,7 +27,7 @@ const samplePosts = [
     likes: 56,
     comments: 23,
     shares: 12,
-    type: 'competition' as const
+    type: 'competition'
   },
   {
     author: 'Mike Chen',
@@ -38,7 +37,7 @@ const samplePosts = [
     likes: 18,
     comments: 15,
     shares: 7,
-    type: 'collaboration' as const
+    type: 'collaboration'
   },
   {
     author: 'Emma Davis',
@@ -49,7 +48,7 @@ const samplePosts = [
     likes: 89,
     comments: 32,
     shares: 18,
-    type: 'normal' as const
+    type: 'normal'
   },
   {
     author: 'David Park',
@@ -59,7 +58,7 @@ const samplePosts = [
     likes: 156,
     comments: 45,
     shares: 28,
-    type: 'achievement' as const
+    type: 'achievement'
   }
 ];
 
